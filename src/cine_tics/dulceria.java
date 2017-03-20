@@ -8,6 +8,7 @@ package cine_tics;
 
 import java.util.ArrayList;
 import javax.swing.JCheckBox;
+import javax.swing.JOptionPane;
 import static javax.xml.bind.DatatypeConverter.parseInt;
 
 
@@ -74,6 +75,7 @@ public class dulceria extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -125,7 +127,7 @@ public class dulceria extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/notas.png"))); // NOI18N
         jButton2.setText("COMPRAR");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -156,6 +158,15 @@ public class dulceria extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel13.setText("Cantidad");
 
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/escritor.png"))); // NOI18N
+        jButton3.setText("ALMACEN");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -170,27 +181,32 @@ public class dulceria extends javax.swing.JFrame {
                             .addComponent(candy))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel1)
+                                            .addComponent(jLabel3)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(28, 28, 28)
+                                        .addComponent(jLabel5)))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel3)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel9))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel10))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel8))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(28, 28, 28)
-                                .addComponent(jLabel5)))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel9))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel10))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel8)))
+                                .addComponent(jButton1)))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
@@ -223,22 +239,19 @@ public class dulceria extends javax.swing.JFrame {
                                         .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jLabel13)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(307, 307, 307)
-                        .addComponent(jButton1)
-                        .addGap(54, 54, 54))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(312, Short.MAX_VALUE)
                         .addComponent(jLabel7)
-                        .addGap(264, 264, 264)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton2)
-                        .addGap(100, 100, 100))))
+                        .addGap(231, 231, 231)))
+                .addGap(22, 22, 22)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton2)))
+                .addGap(29, 29, 29))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -248,19 +261,22 @@ public class dulceria extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton2)
+                            .addComponent(jButton3)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addGap(52, 52, 52)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel11)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(24, 24, 24)
-                                        .addComponent(refresco)))
+                                        .addComponent(refresco))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel2)
+                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel11)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(51, 51, 51)
@@ -282,8 +298,7 @@ public class dulceria extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(nachos)
-                                        .addGap(74, 74, 74)))
-                                .addComponent(jButton1))
+                                        .addGap(74, 74, 74))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -310,8 +325,10 @@ public class dulceria extends javax.swing.JFrame {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jLabel5)
                                         .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel10)))))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addComponent(jLabel10)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton1)))))
+                .addGap(24, 24, 24))
         );
 
         pack();
@@ -327,7 +344,23 @@ public class dulceria extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-   
+     almacen a = new almacen();
+     
+     int can_palomitasA = a.getPalomitas();
+     int can_refrescoA = a.getRefresco();
+     int can_heladoA = a.getHelado();
+     int can_hotdogA = a.getHotDog();
+     int can_dulcesA = a.getDulces();
+     int can_nachosA = a.getNachos();
+     
+        System.out.println("Cantidad palomitas en almacen: "+can_palomitasA);
+        System.out.println("Cantidad refresco en almacen: "+can_refrescoA);
+        System.out.println("Cantidad helado en almacen: "+can_heladoA);
+        System.out.println("Cantidad hotdog en almacen: "+can_hotdogA);
+        System.out.println("Cantidad dulces en almacen: "+can_dulcesA);
+        System.out.println("Cantidad nachos en almacen: "+can_nachosA);
+
+        
      int can_palomitas = 0;
      int can_refresco = 0;
      int can_helado = 0;
@@ -342,12 +375,12 @@ public class dulceria extends javax.swing.JFrame {
      int total_dulces = 0;
      int total_nachos = 0;
      
-     String p_palomitas;
-     String p_refresco;
-     String p_helado;
-     String p_hotdog;
-     String p_dulces;
-     String p_nachos;
+     String p_palomitas = "";
+     String p_refresco = "";
+     String p_helado = "";
+     String p_hotdog = "";
+     String p_dulces = "";
+     String p_nachos = "";
      
      float subTotal = 0;
      float iva = 0;
@@ -356,85 +389,145 @@ public class dulceria extends javax.swing.JFrame {
 
 
      
-     
+     //PALOMITAS
      if(palomitas.isSelected()){
- 
+         
          can_palomitas = parseInt(jTextField1.getText());
+         
+         //Comprobación de almacen
+         if(can_palomitas <= can_palomitasA){
+         
+         int cantidadA = can_palomitasA - can_palomitas;
+         a.setPalomitas(cantidadA);
+             
          total_palomitas = can_palomitas * 30;
          System.out.println("Total palomitas: "+total_palomitas);
          p_palomitas ="Producto: Palomitas \n"
                  + "Precio: "+"$30 \n"
                  + "Cantidad: "+can_palomitas+"\n \n";
+         }else{
+             JOptionPane.showMessageDialog(null, "Palomitas agotadas en almacen");
+         }
   
      }else{
          p_palomitas = "";
          jTextField1.setText("1");
      }
      
+     //REFRESCO
      if(refresco.isSelected()){
  
          can_refresco = parseInt(jTextField4.getText());
+         
+         //Comprobacion de almacen
+         if(can_refresco <= can_refrescoA){
+             
+         int cantidadA = can_refrescoA - can_refresco;
+         a.setRefresco(cantidadA);
+             
          total_refresco = can_refresco * 20;
          System.out.println("Total refresco: "+total_refresco);
          p_refresco ="Producto: Refresco \n"
                  + "Precio: "+"$20 \n"
                  + "Cantidad: "+can_refresco+"\n \n";
+         }else{
+             JOptionPane.showMessageDialog(null, "Refrescos agotados en almacen");
+         }
 
      }else{
          p_refresco = "";
          jTextField4.setText("1");
      }
      
+      //HELADO
       if(helado.isSelected()){
  
          can_helado = parseInt(jTextField2.getText());
+         
+         //Comprobacion de almacen
+         if(can_helado <= can_heladoA){
+             
+         int cantidadA = can_heladoA - can_helado;
+         a.setHelado(cantidadA);
+         
          total_helado = can_helado * 15;
          System.out.println("Total helado: "+total_helado);
          p_helado ="Producto: Helado \n"
                  + "Precio: "+"$15 \n"
                  + "Cantidad: "+can_helado+"\n \n";
+         }else{
+             JOptionPane.showMessageDialog(null, "Helados agotados en almacen");
+         }
 
      }else{
           p_helado = "";
           jTextField2.setText("1");
       }
       
+      //HOTDOG
       if(hotdog.isSelected()){
  
          can_hotdog = parseInt(jTextField5.getText());
+         
+         if(can_hotdog <= can_hotdogA){
+             
+         int cantidadA = can_hotdogA - can_hotdog;
+         a.setHotdog(cantidadA);
+         
          total_hotdog = can_hotdog * 20;
          System.out.println("Total hot dog: "+total_hotdog);
          p_hotdog ="Producto: Hot Dog \n"
                  + "Precio: "+"$20 \n"
                  + "Cantidad: "+can_hotdog+"\n \n";
+         }else{
+             JOptionPane.showMessageDialog(null, "Hot Dog's agotados en almacen");
+         }
 
      }else{
            p_hotdog = "";
            jTextField5.setText("1");
       }
-      
+        
+        //DULCES
         if(candy.isSelected()){
  
          can_dulces = parseInt(jTextField3.getText());
+         
+         if(can_dulces<= can_dulcesA){
+             
+         int cantidadA = can_dulcesA - can_dulces;
+         a.setDulces(cantidadA);
          total_dulces = can_dulces * 15;
          System.out.println("Total dulces: "+total_dulces);
          p_dulces ="Producto: Dulces \n"
                  + "Precio: "+"$15 \n"
                  + "Cantidad: "+can_dulces+"\n \n";
+          }else{
+             JOptionPane.showMessageDialog(null, "Dulces agotados en almacen");
+         }
 
      }else{
             p_dulces = "";
             jTextField3.setText("1");
         }
-        
+      
+      //NACHOS  
       if(nachos.isSelected()){
- 
+         
          can_nachos = parseInt(jTextField6.getText());
+         
+         if(can_nachos<= can_nachosA){
+             
+         int cantidadA = can_nachosA - can_nachos;
+         a.setNachos(cantidadA);
          total_nachos = can_nachos * 25;
          System.out.println("Total nachos: "+total_nachos);
          p_nachos ="Producto: Nachos \n"
                  + "Precio: "+"$25 \n"
                  + "Cantidad: "+can_nachos+"\n \n";
+         }else{
+             JOptionPane.showMessageDialog(null, "Nachos agotados en almacen");
+         }
 
      }else{
            p_nachos = "";
@@ -482,6 +575,14 @@ public class dulceria extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        almacen a = new almacen();
+        a.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -494,6 +595,7 @@ public class dulceria extends javax.swing.JFrame {
     private javax.swing.JCheckBox hotdog;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
