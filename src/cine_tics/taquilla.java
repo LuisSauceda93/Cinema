@@ -37,7 +37,6 @@ cartelera c =new cartelera();
 String [][]hora=c.getHorarios();
 int con=1;
 public String peliculas[]= {"Fragmentado", "El Aro 3", "La Bella y la Bestia", "Logan"};
-public int entradas[]={1,2,3,4,5,6,7,8,9,10};
 public static String peliculaC;
 public static String horario;
 public static int lugares;
@@ -58,17 +57,11 @@ public static int lugares;
     
   
         
-        for (int i = 1; i < 5; i++) 
-        {
-         //jComboBox1.addItem(i);
-        }
+        
     for (String pelicula : peliculas) {
         jComboBox3.addItem(pelicula);
     }
-         for (int i = 0; i <entradas.length; i++) 
-        {
-            //jComboBox4.addItem(entradas[i]);
-        }
+       
               
     }
     public void listarHorario()
@@ -350,7 +343,7 @@ public static int lugares;
       }
        con++;
       //System.out.println("***********");
-      System.out.println(con=(int)jComboBox1.getSelectedItem());
+     con=(int)jComboBox1.getSelectedItem();
             listarHorario();
         
     }//GEN-LAST:event_jComboBox3ActionPerformed
@@ -377,8 +370,8 @@ public static int lugares;
             peliculaC = (String) jComboBox3.getSelectedItem();
             horario = (String) jComboBox2.getSelectedItem();  
             //jComboBox3.setSelectedItem(salaIndex);
-            System.out.println("Pelicula:"+peliculaC);
-            System.out.println("Horario:"+horario);
+            //System.out.println("Pelicula:"+peliculaC);
+            //System.out.println("Horario:"+horario);
             
             
             //Pelicula Fragmentado y horario

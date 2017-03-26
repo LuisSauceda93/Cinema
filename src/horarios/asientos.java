@@ -401,8 +401,8 @@ public class asientos extends javax.swing.JFrame  {
             taquilla l = new taquilla();
             //l.setVisible(true);
             this.setVisible(false);
-            System.out.println("Pelicula Seleccionada: "+L.getNamePelicula());
-            System.out.println("Lugares elegidos: "+lugares);
+            //System.out.println("Pelicula Seleccionada: "+L.getNamePelicula());
+            //System.out.println("Lugares elegidos: "+lugares);
             
                                     
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -423,10 +423,11 @@ public class asientos extends javax.swing.JFrame  {
             D1 = "Ocupado";
             lugares++;
             
+            
         }else{
-            this.AB2.setIcon(new ImageIcon("src/img/sillon_libre.png"));
+            this.AD1.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion3 = false;
-           
+            lugares--;
         }
        
       }else{
@@ -447,6 +448,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AD2.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion1 = false;
+            lugares--;
         }
         }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -461,10 +463,13 @@ public class asientos extends javax.swing.JFrame  {
             seleccion2 = true;
              D4 = "Ocupado";
              lugares++;
+             
             
         }else{
             this.AD4.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion2 = false;
+            lugares--;
+            
         }
         }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -483,6 +488,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AD3.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion4 = false;
+            lugares--;
         }
           }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -502,6 +508,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AC2.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion5 = false;
+            lugares--;
         }
           }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -519,6 +526,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AD5.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion6 = false;
+            lugares--;
         }
         }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -537,6 +545,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AC1.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion8 = false;
+            lugares--;
         }
           }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -555,6 +564,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AB1.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion9 = false;
+            lugares--;
         }
             }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -573,6 +583,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AC3.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion10 = false;
+            lugares--;
         }
             }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -591,6 +602,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AC4.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion11 = false;
+            lugares--;
         }
            }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -609,6 +621,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AC5.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion12 = false;
+            lugares--;
         }
           }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -627,6 +640,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AB2.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion13 = false;
+            lugares--;
         }
            }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -645,6 +659,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AB3.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion14 = false;
+            lugares--;
         }
          }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -663,6 +678,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AB4.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion15 = false;
+            lugares--;
         }
            }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -681,6 +697,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AB5.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion16 = false;
+            lugares--;
         }
             }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -698,6 +715,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AA1.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion17 = false;
+            lugares--;
         }
             }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -716,6 +734,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AA2.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion18 = false;
+            lugares--;
         }
           }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -734,6 +753,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AA3.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion19 = false;
+            lugares--;
         }
         }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -752,6 +772,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AA4.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion20 = false;
+            lugares--;
         }
          }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
@@ -770,6 +791,7 @@ public class asientos extends javax.swing.JFrame  {
         }else{
             this.AA5.setIcon(new ImageIcon("src/img/sillon_libre.png"));
             seleccion21 = false;
+            lugares--;
         }
          }else{
           JOptionPane.showMessageDialog(null, "Ocupado");
